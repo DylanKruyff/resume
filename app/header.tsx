@@ -17,7 +17,9 @@ export function Header() {
         <div className="flex flex-col gap-2">
           <ContactItem icon={MapPinIcon}>Utrecht, The Netherlands</ContactItem>
           <ContactItem icon={MailIcon}>
-            <a href="mailto:dylan.kruyff@gmail.com">dylan.kruyff@gmail.com</a>
+            <a href="mailto:dylan.kruyff@gmail.com" className="underline">
+              dylan.kruyff@gmail.com
+            </a>
           </ContactItem>
           <ContactItem icon={LanguagesIcon}>English, Dutch</ContactItem>
         </div>
