@@ -1,6 +1,5 @@
 import {
   BrainIcon,
-  BriefcaseIcon,
   CodeIcon,
   GraduationCapIcon,
   LucideIcon,
@@ -8,13 +7,9 @@ import {
 import { Section } from "../components/ui/section";
 import { Header } from "./header";
 import { AboutSection } from "./about-section";
+import { ExperienceSection } from "./experience-section";
 
 const sections: { title: string; icon: LucideIcon; description: string }[] = [
-  {
-    title: "Experience",
-    icon: BriefcaseIcon,
-    description: "-",
-  },
   {
     title: "Education",
     icon: GraduationCapIcon,
@@ -38,6 +33,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center gap-16 py-16 px-16 bg-white dark:bg-black sm:items-start">
         <Header />
         <AboutSection />
+        <ExperienceSection />
         {sections.map((section) => (
           <Section
             key={section.title}
