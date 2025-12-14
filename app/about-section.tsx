@@ -13,7 +13,7 @@ import { Section } from "../components/ui/section";
 export function AboutSection() {
   return (
     <Section title="About" icon={UserIcon}>
-      <p>
+      <p className="text-sm">
         Passionate and studious full-stack developer with a strong focus on
         simplicity and efficiency. I&apos;ve worked in various domains and
         organization structures, ranging from start-up SaaS-applications to
@@ -22,7 +22,7 @@ export function AboutSection() {
         core philosophy in software engineering/delivery is to keep it simple,
         while maintaining high quality. My key guidelines are:
       </p>
-      <ul className="ml-4 flex flex-col gap-y-1">
+      <ul className="md:ml-4 flex flex-col gap-y-1 text-sm">
         <Guideline icon={RocketIcon}>
           A strong CI/CD pipeline (striving for{" "}
           <a href="https://dora.dev/" className="underline">

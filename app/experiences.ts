@@ -36,6 +36,8 @@ export const experienceItems: ExperienceItemProps[] = [
           "AI",
           "Scrum",
           "Docker",
+          "GitHub Actions",
+          "Git",
         ],
         learnings: [
           "How to successfully build a SaaS application from scratch with a small team and limited time",
@@ -62,6 +64,9 @@ export const experienceItems: ExperienceItemProps[] = [
           "Operations management",
           "Scrum",
           "Docker",
+          "GitHub Actions",
+          "Git",
+          "Python",
         ],
         learnings: [
           `The importance of "using the right tool for the right job" (e.g. the impact of technical decisions)`,
@@ -91,6 +96,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "NgRx",
           "Kanban",
           "Docker",
+          "Git",
         ],
         learnings: [
           "Requirements gathering and implementation",
@@ -120,6 +126,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "Nx",
           "Docker",
           "SAFe",
+          "Git",
         ],
         learnings: [],
       },
@@ -136,7 +143,7 @@ export const experienceItems: ExperienceItemProps[] = [
         startDate: new Date("2019-02-01"),
         endDate: new Date("2020-05-01"),
         description: "Full-stack software engineer for the e-commerce team",
-        skills: ["Angular", "Java", "PHP", "Scrum"],
+        skills: ["Angular", "Java", "PHP", "Scrum", "Git"],
         learnings: [],
       },
       {
@@ -145,7 +152,7 @@ export const experienceItems: ExperienceItemProps[] = [
         startDate: new Date("2018-01-01"),
         endDate: new Date("2018-09-01"),
         description: "Full-stack software engineer for the e-commerce team",
-        skills: ["Angular", "Java", "PHP", "Scrum"],
+        skills: ["Angular", "Java", "PHP", "Scrum", "Git"],
         learnings: [],
       },
     ],

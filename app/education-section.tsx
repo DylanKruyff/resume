@@ -54,9 +54,10 @@ function EducationItem({
 }: EducationItemProps) {
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex items-center gap-1">
+      <div className="flex flex-col md:flex-row items-center gap-1">
         <h3>{institution}</h3>
-        <p className="text-sm text-gray-500">- {location}</p>
+        <span className="text-sm text-gray-500 hidden md:block">-</span>
+        <p className="text-sm text-gray-500">{location}</p>
       </div>
       <div>
         <h4 className="text-lg font-bold">{title}</h4>

@@ -10,14 +10,7 @@ import { AboutSection } from "./about-section";
 import { ExperienceSection } from "./experience-section";
 import { EducationSection } from "./education-section";
 import { SkillsSection } from "./skills-section";
-
-const sections: { title: string; icon: LucideIcon; description: string }[] = [
-  {
-    title: "Projects",
-    icon: CodeIcon,
-    description: "-",
-  },
-];
+import { PublicationSection } from "./publication-section";
 
 export default function Home() {
   return (
@@ -28,15 +21,7 @@ export default function Home() {
         <ExperienceSection />
         <EducationSection />
         <SkillsSection />
-        {sections.map((section) => (
-          <Section
-            key={section.title}
-            title={section.title}
-            icon={section.icon}
-          >
-            <p>{section.description}</p>
-          </Section>
-        ))}
+        <PublicationSection />
       </main>
     </div>
   );
