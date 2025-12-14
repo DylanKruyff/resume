@@ -4,7 +4,6 @@ import {
   GraduationCapIcon,
   LucideIcon,
 } from "lucide-react";
-import { Section } from "../components/ui/section";
 import { Header } from "./header";
 import { AboutSection } from "./about-section";
 import { ExperienceSection } from "./experience-section";

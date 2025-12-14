@@ -101,6 +101,7 @@ export const experienceItems: ExperienceItemProps[] = [
         learnings: [
           "Requirements gathering and implementation",
           "Stakeholder management",
+          "Time management",
         ],
       },
     ],
@@ -128,7 +129,10 @@ export const experienceItems: ExperienceItemProps[] = [
           "SAFe",
           "Git",
         ],
-        learnings: [],
+        learnings: [
+          "Experiencing working in a large enterprise company with many dependencies and a complex architecture",
+          "The importance of communication and collaboration",
+        ],
       },
     ],
   },
@@ -144,7 +148,7 @@ export const experienceItems: ExperienceItemProps[] = [
         endDate: new Date("2020-05-01"),
         description: "Full-stack software engineer for the e-commerce team",
         skills: ["Angular", "Java", "PHP", "Scrum", "Git"],
-        learnings: [],
+        learnings: ["Learning more about UX/UI best practices"],
       },
       {
         title: "Software Engineer",
@@ -153,7 +157,10 @@ export const experienceItems: ExperienceItemProps[] = [
         endDate: new Date("2018-09-01"),
         description: "Full-stack software engineer for the e-commerce team",
         skills: ["Angular", "Java", "PHP", "Scrum", "Git"],
-        learnings: [],
+        learnings: [
+          "First steps in software engineering",
+          "The practical application of Scrum",
+        ],
       },
     ],
   },
