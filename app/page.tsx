@@ -9,13 +9,9 @@ import { Header } from "./header";
 import { AboutSection } from "./about-section";
 import { ExperienceSection } from "./experience-section";
 import { EducationSection } from "./education-section";
+import { SkillsSection } from "./skills-section";
 
 const sections: { title: string; icon: LucideIcon; description: string }[] = [
-  {
-    title: "Skills",
-    icon: BrainIcon,
-    description: "",
-  },
   {
     title: "Projects",
     icon: CodeIcon,
@@ -31,6 +27,7 @@ export default function Home() {
         <AboutSection />
         <ExperienceSection />
         <EducationSection />
+        <SkillsSection />
         {sections.map((section) => (
           <Section
             key={section.title}
