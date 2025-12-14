@@ -3,15 +3,16 @@ import { Section } from "../components/ui/section";
 import { Separator } from "../components/ui/separator";
 import { experienceItems, ExperienceItemProps } from "./experiences";
 import { SkillList } from "../components/ui/skill-list";
+import { Fragment } from "react/jsx-runtime";
 
 export function ExperienceSection() {
   return (
     <Section title="Experience" icon={BriefcaseIcon}>
-      {experienceItems.map((item) => (
-        <>
-          <ExperienceItem key={item.company} {...item} />
+      {experienceItems.map((item, index) => (
+        <Fragment key={index}>
+          <ExperienceItem {...item} />
           <Separator className="last:hidden" />
-        </>
+        </Fragment>
       ))}
     </Section>
   );
@@ -40,41 +41,39 @@ function ExperienceItem({
         <p className="text-sm text-gray-500">{location}</p>
       </div>
       <ul className="flex flex-col gap-4">
-        {roles.map((role) => {
-          return (
-            <li className="text-sm flex flex-col gap-2" key={role.title}>
-              <div>
-                <h4 className="text-lg font-bold">{role.title}</h4>
-                <p className="text-gray-500 text-sm">{role.fte}</p>
-                <p className="text-gray-500 text-sm">
-                  {role.startDate.toLocaleDateString("en-US", {
-                    month: "long",
-                    year: "numeric",
-                  })}{" "}
-                  -{" "}
-                  {role.endDate?.toLocaleDateString("en-US", {
-                    month: "long",
-                    year: "numeric",
-                  }) || "Present"}{" "}
-                  ({timeBetween(role.startDate, role.endDate || new Date())})
-                </p>
-              </div>
-              <div>
-                <h5 className="font-semibold">Description</h5>
-                <p>{role.description}</p>
-              </div>
-              <div>
-                <h5 className="font-semibold">Key learnings</h5>
-                <ul className="list-disc list-inside">
-                  {role.learnings.map((learning) => (
-                    <li key={learning}>{learning}</li>
-                  ))}
-                </ul>
-              </div>
-              <SkillList skills={role.skills} />
-            </li>
-          );
-        })}
+        {roles.map((role, index) => (
+          <li className="text-sm flex flex-col gap-2" key={index}>
+            <div>
+              <h4 className="text-lg font-bold">{role.title}</h4>
+              <p className="text-gray-500 text-sm">{role.fte}</p>
+              <p className="text-gray-500 text-sm">
+                {role.startDate.toLocaleDateString("en-US", {
+                  month: "long",
+                  year: "numeric",
+                })}{" "}
+                -{" "}
+                {role.endDate?.toLocaleDateString("en-US", {
+                  month: "long",
+                  year: "numeric",
+                }) || "Present"}{" "}
+                ({timeBetween(role.startDate, role.endDate || new Date())})
+              </p>
+            </div>
+            <div>
+              <h5 className="font-semibold">Description</h5>
+              <p>{role.description}</p>
+            </div>
+            <div>
+              <h5 className="font-semibold">Key learnings</h5>
+              <ul className="list-disc list-inside">
+                {role.learnings.map((learning) => (
+                  <li key={learning}>{learning}</li>
+                ))}
+              </ul>
+            </div>
+            <SkillList skills={role.skills} />
+          </li>
+        ))}
       </ul>
     </div>
   );

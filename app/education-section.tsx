@@ -1,6 +1,7 @@
 import { GraduationCapIcon } from "lucide-react";
 import { Section } from "../components/ui/section";
 import { Separator } from "../components/ui/separator";
+import { Fragment } from "react/jsx-runtime";
 
 interface EducationItemProps {
   title: string;
@@ -34,11 +35,11 @@ const educationItems: EducationItemProps[] = [
 export function EducationSection() {
   return (
     <Section title="Education" icon={GraduationCapIcon}>
-      {educationItems.map((item) => (
-        <>
-          <EducationItem key={item.title} {...item} />
+      {educationItems.map((item, index) => (
+        <Fragment key={index}>
+          <EducationItem {...item} />
           <Separator className="last:hidden" />
-        </>
+        </Fragment>
       ))}
     </Section>
   );
