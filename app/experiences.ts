@@ -38,6 +38,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "Docker",
           "GitHub Actions",
           "Git",
+          "PostgreSQL",
         ],
         learnings: [
           "How to successfully build a SaaS application from scratch with a small team and limited time",
@@ -67,6 +68,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "GitHub Actions",
           "Git",
           "Python",
+          "PostgreSQL",
         ],
         learnings: [
           `The importance of "using the right tool for the right job" (e.g. the impact of technical decisions)`,
@@ -97,6 +99,7 @@ export const experienceItems: ExperienceItemProps[] = [
           "Kanban",
           "Docker",
           "Git",
+          "PostgreSQL",
         ],
         learnings: [
           "Requirements gathering and implementation",
@@ -117,10 +120,10 @@ export const experienceItems: ExperienceItemProps[] = [
         startDate: new Date("2021-09-01"),
         endDate: new Date("2022-07-01"),
         description:
-          "Building the Customer Acquisition flow + buliding frontend components and integrating them into SiteCore (Headless CMS)",
+          "Building the Customer Acquisition flow + building frontend components and integrating them into SiteCore (Headless CMS)",
         skills: [
           "Angular",
-          "Nestjs",
+          "NestJS",
           "AWS",
           "NgRx",
           "SiteCore",

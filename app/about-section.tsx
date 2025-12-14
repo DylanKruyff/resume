@@ -47,6 +47,10 @@ export function AboutSection() {
           Keep the code scalable, but don&apos;t over-optimize too soon
         </Guideline>
       </ul>
+      <p className="text-sm">
+        In my free time, I enjoy making music, working out, hanging out with
+        friends and family, and learning new things.
+      </p>
     </Section>
   );
 }
